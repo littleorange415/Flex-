@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.full{
+    width:1024;
+}
+.wrap{
+    width:940px;
+    margin: 0 auto;
+}
+/*Header Part*/
+.header{
+    height:40px ;
+    margin:30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 219.49px;
+}
+.header .nav{
+    width:295px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header .nav li{
+    text-align: center;
+}
+.header .nav li a{
+    font-weight: bold;
+    font-size: 16px;
+    color:#3F5D45;
+}
+.header .nav li a:hover{
+    font-weight: bold;
+    font-size: 16px;
+    color:#EAF0ED;
+}
+
+.header .nav li a img{
+    width: 24px;
+    height: 24px;
+    margin:0 0 0 19px;
+}
+
+/*Content Part*/
+.content{
+    margin:30px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+}
+
+.product{
+    margin: 60px 0 0 ;
+    display: flex;
+    
+}
+.productList{
+    margin:0 20px 0 0;
+}
+
+.productList .list li{
+    width:300px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.productList .list li p{
+    background-color:#3F5D45;
+    color:#EAF0ED;
+    padding: 16px 0;
+}
+.productList .list li a{
+    background-color:#FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    color:#3F5D45;
+    border:1px solid#EAF0ED;
+    display: block;
+    padding: 16px 0;
+}
+.productList .list li a:hover{
+    background-color:#EAF0ED;
+}
+
+.productItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.productCard{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.photo{
+    display: flex;
+    position: relative;
+}
+
+.photo img{
+    z-index: -1;
+} 
+
+.photo .feature{
+    width:36px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #EAF0ED;
+    line-height: 20px;
+    background: #3F5D45;
+    position: absolute;
+    padding: 10px;
+    margin:0 0 0 20px;
+}
+.photo .like{
+    padding:19px 0 0;
+    position: absolute;
+    right:22px;
+}
+.info{
+    display: flex;
+    text-align: center; 
+}
+.info h2{
+    width:173px;
+    padding: 14px 33px;
+    font-size: 20px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+.info h3{
+    width:127px;
+    padding:14px 20px 14px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+.productInfo{
+    margin: 0 0 20px 0; 
+}
+
+.productInfo .cart{
+    background-color:#EAF0ED;
+    font-weight: bold;
+    font-size: 24px;
+    color:#3F5D45;
+    text-decoration: none;
+    border:1px solid#EAF0ED;
+    display: block;
+    padding: 16px 90px;
+}
+
+.productInfo .cart:hover{
+    background-color:#3F5D45;
+    color:#EAF0ED;
+}
+
+.productItem .pages ul{
+    margin: 10px 0 0;
+    display:flex;
+}
+
+.productItem .pages li a{
+    width:60px;
+    height:60px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    border:1px solid #eaf0ED;
+}
+
+.productItem .pages li a:hover{
+    background:#3F5D45;
+    font-weight: bold;
+    color:#eaf0Ed;
+}
+.productItem .pages li a img{
+    vertical-align : middle;
+}
+
+/*Footer Part*/
+.suscribe{
+    background:#3F5D45;
+    margin: 60px 0 0;
+}
+.suscribeItem{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.suscribeItem h2{
+    font-size:24px;
+    color: #eaf0Ed;
+    text-align: center;
+    padding: 0 124px 0 0;
+}
+.suscribeItem .lightLogo{
+    width:40px;
+    margin: 0 20px 0 0;
+}
+.suscribeMail ul .mailbox{
+    background: #EAF0ED;
+}
+.suscribeMail ul .mailbox img{
+    padding:16px 272px 16px 20px;
+}
+.suscribeMail ul {
+    display:flex;
+}
+.suscribeMail ul .mailEnter a{
+    background: #FFE180;
+    display: block;
+    padding: 16px 20px;
+}
+
+.contact{
+    background: #EAF0ED;
+}
+.contactItem{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 0;
+
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contactAddress img{
+    margin:8.9px 0 0;
+}
+.contactAddress ul{
+    padding: 115.5px 0 30px;
+}
+.contactAddress li{
+    font-size: 16px;
+    line-height:24px;
+    color: #3F5D45;
+}
+.contactAddress li a{
+    display: block;
+    font-size: 16px;
+    color: #3F5D45;
+}
+
+.contactInfo .contactIcon{
+    display:flex;
+}
+.contactIcon li {
+    width:32px;
+    padding: 0 8px 0 0;
+}
+.ccInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+    
+}
+.ccInfo img{
+    width:59.28px;
+}
+.ccInfo p{
+    font-family:Times, serif;
+    font-size: 16px;
+    color:#3F5D45;
+   
+}
